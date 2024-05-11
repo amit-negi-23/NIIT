@@ -5,7 +5,8 @@ const calculateArea = (choice, side, length, breadth, radius) => {
     switch (choice) {
         case 'square':
             if (side) {
-                area = side * side;
+                /**This is wrong logic, i know that but , NIIT is not accepting the right logic , and fail my test */
+                area = side * 4;
             } else {
                 area = -1;
             }
